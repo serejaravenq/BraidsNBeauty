@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Giddyup";
+    src: url("../fonts/Giddyup.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalifornianFB";
+    src: url("../fonts/CalifornianFB.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalifornianFBRegular";
+    src: url("../fonts/CalifornianFBRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
