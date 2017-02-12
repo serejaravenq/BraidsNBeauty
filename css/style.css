@@ -5,6 +5,21 @@ body {
 
 a {
 	text-decoration: none;
+	color: #fff;
+}
+
+ul,li {
+	display: inline-block;
+	display: -moz-inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+.wrapper,
+.section,
+.footer {
+	max-width: 950px;
+	margin: 0 auto;
 }
 
 
@@ -13,8 +28,6 @@ a {
 /*************************/
 .wrapper {
 	background: url(../img/header-image.png)  no-repeat;
-	max-width: 950px;
-	margin: 10px auto 2px;
 	height: 107px;
 }
 
@@ -25,31 +38,28 @@ a {
 	height: 95px;
 	width: 318px;
 	margin: 2px 0 0 20px;
+	float: left;
 }
 .logo>a {
-	display:none;
+	display: none;	
 }
 
 .authorization {
-	display: inline-block;
     padding: 0;
     float: right;
     margin: 10px 25px;
 }
 
 .authorization li {
-	display: inline-block;
 	margin: 0 5px 0 0;
 }
-.authorization li>a {
+.authorization li a {
 	color: #e5be1b;
 	font-family: "Trebuchet MS";
-    font-size: 14px;
-    vertical-align: middle;
-    line-height: 11px;
+    font-size: 14px;    
 }
 		
-.authorization .layout-element {
+.authorization .layout-image-element {
 	padding-left: 12px;
 	background: url(../img/header-point.png) no-repeat left 60%;
 }
@@ -63,15 +73,18 @@ a {
 /*************************/
 /*section*/
 /*************************/
+.clearfix {
+	zoom: 1;
+}
+
 .clearfix:after {
+	visibility: hidden;
+	display: table;
     content: "";
-    display: table;
-    clear: both;
+    clear: both; 
 }
 
 .section {
-	max-width: 950px;
-	margin: 0 auto;
 	border-bottom: 5px solid #987a23;
 }
 
@@ -79,38 +92,34 @@ a {
 	position: relative;
 	background: url(../img/section-navigation.png) no-repeat;
 	height: 49px;
+	margin-top: 2px;
 }
 
 .main-navigation .layout-element-right {
 	position: absolute;
 	right: 0;
-	top: -2px;
 }
 
 .main-navigation .layout-element-left {
-	left: 0;
 	position: absolute;
-	
+	left: 0;
 }
 
-.main-navigation ul {
+.main-navigation .nav {
 	padding: 0;
-	display: inline-block;
 	margin: 15px 0 0;
 }
 
-.main-navigation ul li {
-	display: inline-block;
+.main-navigation .nav li {
 	border-left: 1px solid #7f8183;
 	margin-left: 8px;
 }
 
-.main-navigation ul .first {
+.main-navigation .nav .first {
 	border-left: none;
 }
 
-.main-navigation ul li>a {
-	color: #fff;
+.main-navigation .nav li a {
 	text-transform: uppercase;
 	margin-left: 8px;
 }
@@ -119,7 +128,7 @@ a {
 	background: url(../img/main-content-bg.png) no-repeat top left;
 	width: 521px;
 	padding-top: 257px;
-	float:left;
+	float: left;
 }
 
 .sidebar {
@@ -154,18 +163,18 @@ a {
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product {
-	padding: 0 15px 20px 20px;	
+	padding: 0 15px 15px 20px;	
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product .product-image {
 	float: left;
 	border: 1px solid #bcbcbc;
 	width: 110px;
-	height: 75px;
+	height: 75px;	
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product h3 {
-	float :right;
+	float : right;
 	margin: 2px 10px 0 0;
 	width: 260px;
 	font-size: 15px;
@@ -173,7 +182,7 @@ a {
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product p {
-	float:right;
+	float: right;
 	margin: 0 10px 0 0;
 	width: 260px;
 	color: #535353;
@@ -189,11 +198,14 @@ a {
 }
 
 .sidebar .additional-item {
-	display:inline-block;
+	display: inline-block;
+	display: -moz-inline-block;
+	*display: inline;
+	zoom:1;
 	width: 40%;
 	padding: 30px 0 20px 30px;
 	background: url(../img/additional-image1.jpg) no-repeat 95%;
-	margin: 10px 0;
+	margin: 5px 0 10px;
 }
 
 .section .sidebar  .second {
@@ -201,15 +213,14 @@ a {
 }
 
 .sidebar .additional-item a {
-	display:inline-block;
+	display: inline-block;
 	color: #151515;
 	font-size: 19px;
     width: 50%;
-    vertical-align: middle;
     line-height: 16px;
 }
 
-.sidebar .additional-item a span{
+.sidebar .additional-item a span {
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -225,30 +236,26 @@ a {
 /*************************/
 .footer {
     background: url(../img/footer-main-bg.png) no-repeat;
-    max-width: 950px;
-    margin: 0 auto;
     height: 55px;
+    text-align: center;
 }
 
 .footer ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	text-align: center;
 }
 
 .footer ul li {
-	display: inline-block;
 	margin: 15px 0;
 }
 
-.footer ul li>a {
-	color: #fff;
+.footer ul li a {
 	font-size: 12px;
-	padding-right: 5px;
+	padding: 0 5px;
 }
 
-.separator {
+.footer .separator {
 	border-right: 1px solid #7f8183;
 }
 
