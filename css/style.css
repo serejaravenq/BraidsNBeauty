@@ -252,11 +252,15 @@ ul,li {
 
 .footer ul li a {
 	font-size: 12px;
-	padding: 0 5px;
+	padding: 0 5px 0 2px;
 }
 
 .footer .separator {
 	border-right: 1px solid #7f8183;
 }
+
+/*************************/
+/*footer END*/
+/*************************/
 
 
