@@ -1,6 +1,7 @@
 body {
 	font-family: "Arial";
 	font-size: 13px;
+	margin: 0;
 }
 
 a {
@@ -21,6 +22,44 @@ ul,li {
 	max-width: 950px;
 	margin: 0 auto;
 }
+/***--Pixel Perfect--**/
+.p {
+    background: url(../img/braidznbeauty.png) no-repeat; /* Ваш макет */
+            width: 1255px;/* ширина макета */
+            height: 750px;/* высота макета*/
+            left: calc(50% - 627.5px);/* второе значение - половина, от ширины макета*/
+            position: absolute;
+            top: 0;
+            opacity: 0.4 !important;
+            transition: .3s;
+            z-index: 97;
+}
+
+#p {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 75px;
+        background: #c36c2c;
+        z-index: 99;
+        cursor: pointer;
+        text-align: center;
+        font-size: 25px;
+        line-height: 0px;
+        color: #c36c2c;
+        left: -150px;
+        vertical-align: middle;
+        font-weight: 700;
+        transition: .3s
+    }
+ 
+    #p:hover {
+        left: 0;
+        line-height: 80px;
+        background: #88d3c2;
+    }
+/***--Pixel Perfect END--**/
 
 
 /*************************/
@@ -34,20 +73,19 @@ ul,li {
 .logo {
 	display: inline-block;
 	background: url(../img/logo-image.png) no-repeat right bottom;
-	margin-left: 20px;
 	height: 95px;
 	width: 318px;
-	margin: 2px 0 0 20px;
+	margin: 2px 0 0 18px;
 	float: left;
 }
-.logo>a {
+.logo span {
 	display: none;	
 }
 
 .authorization {
     padding: 0;
     float: right;
-    margin: 10px 25px;
+    margin: 9px 22px;
 }
 
 .authorization li {
@@ -56,11 +94,12 @@ ul,li {
 .authorization li a {
 	color: #e5be1b;
 	font-family: "Trebuchet MS";
-    font-size: 14px;    
+    font-size: 14px;
+    letter-spacing: -0.8px;   
 }
 		
 .authorization .layout-image-element {
-	padding-left: 12px;
+	padding-left: 13px;
 	background: url(../img/header-point.png) no-repeat left 60%;
 }
 
@@ -86,6 +125,7 @@ ul,li {
 
 .section {
 	border-bottom: 5px solid #987a23;
+	padding-top: 1px;
 }
 
 .main-navigation {
@@ -98,21 +138,25 @@ ul,li {
 .main-navigation .layout-element-right {
 	position: absolute;
 	right: 0;
+	padding: 5px;
+	background: url(../img/nav-border-right.png) no-repeat;
 }
 
 .main-navigation .layout-element-left {
 	position: absolute;
 	left: 0;
+	padding: 5px;
+	background: url(../img/nav-border-left.png) no-repeat;
 }
 
 .main-navigation .nav {
 	padding: 0;
-	margin: 15px 0 0;
+	margin: 15px 0 0 0;
 }
 
 .main-navigation .nav li {
 	border-left: 1px solid #7f8183;
-	margin-left: 8px;
+	margin: 0 0 0 11px;
 }
 
 .main-navigation .nav .first {
@@ -121,7 +165,8 @@ ul,li {
 
 .main-navigation .nav li a {
 	text-transform: uppercase;
-	margin-left: 8px;
+	margin: 0 0 0 12px;
+	letter-spacing:  -0.4px;
 }
 
 .content {
@@ -143,6 +188,7 @@ ul,li {
 
 .sidebar .products-wrapper .layout-element-bottom {
 	background: url(../img/bottom.jpg) no-repeat bottom left;
+	padding-bottom: 15px;
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top {
@@ -155,46 +201,49 @@ ul,li {
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border h2 {
 	margin: 0;
-	padding: 28px 0 15px 15px;
+	padding: 30px 0 12px 17px;
 	font-size: 18px;
 	color: #616161;
 	font-weight: normal;
+	letter-spacing: -0.7px;
 	
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product {
-	padding: 0 15px 15px 20px;	
+	padding: 0 15px 9px 23px;	
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product .product-image {
 	float: left;
 	border: 1px solid #bcbcbc;
-	width: 110px;
-	height: 75px;	
+	width: 114px;
+	height: 77px;	
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product h3 {
 	float : right;
-	margin: 2px 10px 0 0;
+	margin: 6px 1px 0 0;
 	width: 260px;
 	font-size: 15px;
 	color: #967821;
+	letter-spacing: -0.9px;
 }
 
 .sidebar .products-wrapper .layout-element-bottom .layout-element-top .layout-element-border .product p {
 	float: right;
-	margin: 0 10px 0 0;
-	width: 260px;
+	margin: -4px 15px 0 0;
+	width: 244px;
 	color: #535353;
+	letter-spacing: -0.5px;
 }
 
 .content .gallery .gallery-image {
 	border: 1px solid #e6e6e6;
-	margin-right: 10px;
+	margin: 0 3px 0 6px;
 }
 
 .section .content .gallery .third {
-	margin: 0;
+	margin: 0 0 0 4px;
 }
 
 .sidebar .additional-item {
@@ -203,13 +252,14 @@ ul,li {
 	*display: inline;
 	zoom:1;
 	width: 40%;
-	padding: 30px 0 20px 30px;
-	background: url(../img/additional-image1.jpg) no-repeat 95%;
+	padding: 30px 0 19px 34px;
+	background: url(../img/additional-image1.jpg) no-repeat 92%;
 	margin: 5px 0 10px;
 }
 
 .section .sidebar  .second {
-	background: url(../img/additional-image2.jpg) no-repeat 95%;
+	background: url(../img/additional-image2.jpg) no-repeat 90%;
+	padding: 22px 0 19px 6px;
 }
 
 .sidebar .additional-item a {
@@ -218,6 +268,7 @@ ul,li {
 	font-size: 19px;
     width: 50%;
     line-height: 16px;
+    letter-spacing: -0.4px;
 }
 
 .sidebar .additional-item a span {
@@ -238,21 +289,18 @@ ul,li {
     background: url(../img/footer-main-bg.png) no-repeat;
     height: 55px;
     text-align: center;
+    height: 49px;
 }
 
 .footer ul {
-	margin: 0;
+	margin: 16px 0 0 17px;
 	padding: 0;
 	list-style: none;
 }
 
-.footer ul li {
-	margin: 15px 0;
-}
-
 .footer ul li a {
 	font-size: 12px;
-	padding: 0 5px 0 2px;
+	padding: 0 7px 0 1px;
 }
 
 .footer .separator {
